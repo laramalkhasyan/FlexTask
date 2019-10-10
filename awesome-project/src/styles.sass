@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin fix-to-center
+    width: 60%
+    margin: 0 auto
+    display: flex
+
+header
+    height: 70px
+    background-color: #343a40
+
+nav
+    @include fix-to-center
+    align-items: center
+    justify-content: space-between
+    a
+        color: white
+        text-decoration: none
+        font-size: 20px
+
+ul
+    list-style: none
+li
+    flex-direction: row
+    margin: 20px
+    display: inline
+
+.name
+    background-color: blue
+    height: 350px
+
+.title
+    @include fix-to-center
+    justify-content: flex-start
+    flex-direction: column
+    padding: 70px
+
+    h2
+        color: white
+        font-size: 70px
+        margin: 0px
+    p
+        color: white
+        font-size: 20px
+
+main
+    background-color: white
+.description
+    @include fix-to-center
+    button
+        color: white
+        background-color: blue
+        padding: 25px
+    .left
+        flex-grow: 2
+    .right
+        flex-grow: 1
+    h4 
+        font-size: 30px

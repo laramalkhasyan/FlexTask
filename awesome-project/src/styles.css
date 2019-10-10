@@ -1,0 +1,81 @@
+header {
+  height: 70px;
+  background-color: #343a40;
+}
+
+nav {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  flex-direction: row;
+  margin: 20px;
+  display: inline;
+}
+
+.name {
+  background-color: blue;
+  height: 350px;
+}
+
+.title {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.title h2 {
+  color: white;
+  font-size: 70px;
+  margin: 0px;
+}
+
+.title p {
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  background-color: white;
+}
+
+.description {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.description button {
+  color: white;
+  background-color: blue;
+  padding: 25px;
+}
+
+.description .left {
+  flex-grow: 2;
+}
+
+.description .right {
+  flex-grow: 1;
+}
+
+.description h4 {
+  font-size: 30px;
+}
