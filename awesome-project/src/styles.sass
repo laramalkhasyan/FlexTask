@@ -2,6 +2,13 @@
     width: 60%
     margin: 0 auto
     display: flex
+@mixin button
+    font-size: 16px
+    color: white
+    background-color: blue
+    padding: 15px 30px
+    border: 0px
+    border-radius: 30px
 
 header
     height: 70px
@@ -46,12 +53,61 @@ main
 .description
     @include fix-to-center
     button
-        color: white
-        background-color: blue
-        padding: 25px
-    .left
-        flex-grow: 2
-    .right
-        flex-grow: 1
-    h4 
+        @include button
+
+    // .left
+    //     flex-grow: 2
+    // .right
+    //     flex-grow: 1
+    h4
         font-size: 30px
+
+.left
+    width: 66%
+    p
+        font-size: 16px
+
+.right
+    margin-left: 25px
+.m-cards
+    @include fix-to-center
+    margin-top: 30px
+    padding: 50px 0
+
+.card
+    flex-direction: column
+    margin: 15px
+    border: 2px solid grey
+
+    img
+        width: 100%
+        height: 100px
+
+    h6
+        font-size: 35px
+        margin: 15px
+        float: left
+    p
+
+        font-size: 16px
+        margin: 15px
+        float: left
+        padding-bottom: 50px
+        border-bottom: 2px solid grey
+    button
+        @include button
+        margin: 20px 15px
+        float: left
+        border: 2px solid
+
+footer
+    background-color: grey
+    .f-container
+        @include fix-to-center
+        justify-content: center
+
+        height: 100px
+    p
+        margin-top: 45px
+        color: white
+        font-size: 20px
